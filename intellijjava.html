@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Java</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="./index.html">Principal</a>
+        <a href="./tinkercad.html">Tinkercad</a>
+        <a href="./arduinocpp.html">IDE Arduino - C++</a>
+        <a href="./intellijjava.html">IDE IntelliJ - Java</a>
+    </nav>
+
+    <div>
+        <h1>Java</h1>
+
+        <h2>Descrição completa da linguagem Java</h2>
+        <p>Java é uma linguagem de programação orientada a objetos desenvolvida na década de 90 por uma equipe de
+            programadores chefiada por James Gosling, na empresa Sun Microsystems, que em 2008 foi adquirido pela
+            empresa
+            Oracle Corporation. Diferente das linguagens de programação modernas, que são compiladas para código nativo,
+            Java é compilada para um bytecode que é interpretado por uma máquina virtual (Java Virtual Machine,
+            abreviada
+            JVM). A linguagem de programação Java é a linguagem convencional da Plataforma Java, mas não é a sua única
+            linguagem. A J2ME é utilizada em jogos de computador, celular, calculadoras, ou até mesmo o rádio do carro.
+        </p>
+
+    </div>
+
+    <div class="image">
+        <h2>Exemplo de um código Java (print)</h2>
+
+        <img src="./image/intellijjava/printcodigojavaintellij.jpg" width="1260px" height="720px" alt=""><br>
+
+        <small>Fonte: O autor</small>
+
+    </div>
+
+    <div>
+
+        <h2>Exemplo de um código Java (texto)</h2>
+        <p>
+        <pre><code>
+        import java.util.Scanner;
+
+        public class Programa04 {
+
+            public static void main(String[] args) {
+
+                Scanner sc = new Scanner(System.in);
+
+                int pot1 = 0, pot2 = 0, res = 0;
+
+                boolean led = false;
+
+                System.out.print("Digite o valor do sensor potenciômetro 1: ");
+                pot1 = sc.nextInt();
+
+                System.out.print("Digite o valor do sensor potenciômetro 2: ");
+                pot2 = sc.nextInt();
+
+
+                if(pot1 > pot2){
+                    res += pot1 + pot2;
+                    System.out.printf("A resposta é: %d", res);
+                    led = true;
+                } else {
+                    led = false;
+                }
+
+                sc.close();
+
+            }
+        }
+    </code></pre>
+        </p>
+
+    </div>
+
+</body>
+
+</html>

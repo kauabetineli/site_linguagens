@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>C++</title>
+</head>
+
+<body>
+
+    <nav>
+        <a href="./index.html">Principal</a>
+        <a href="./tinkercad.html">Tinkercad</a>
+        <a href="./arduinocpp.html">IDE Arduino - C++</a>
+        <a href="./intellijjava.html">IDE IntelliJ - Java</a>
+    </nav>
+
+    <div>
+        <h1>C++</h1>
+
+        <h2>Descrição completa da linguagem C++</h2>
+        <p>C++ (em português: Pronuncia-se "cê mais mais") é uma linguagem de programação compilada multi-paradigma (seu
+            suporte inclui linguagem imperativa, orientada a objetos e genérica) e de uso geral. Desde os anos 1990 é
+            uma
+            das linguagens comerciais mais populares, sendo bastante usada também na academia por seu grande desempenho
+            e
+            base de utilizadores. Bjarne Stroustrup desenvolveu o C++ (originalmente com o nome C with Classes, que
+            significa C com classes em
+            português) em 1983 no Bell Labs como um adicional à linguagem C. Novas características foram adicionadas com
+            o
+            tempo, como funções virtuais, sobrecarga de operadores, herança múltipla, gabaritos e tratamento de
+            exceções.
+            Após a padronização ISO realizada em 1998 e a posterior revisão realizada em 2003, uma nova versão da
+            especificação da linguagem foi lançada em dezembro de 2014, conhecida informalmente como C++14.</p>
+
+    </div>
+
+    <div class="image">
+        <h2>Exemplo de um código C++ da IDE ARDUÍNO (print)</h2>
+        <img src="./image/cpp/printarduinocpp.jpg" alt=""><br>
+        <small>Fonte: O autor</small>
+    </div>
+    <div>
+        <h2>Exemplo de um código C++ da IDE ARDUÍNO (texto)</h2>
+        <p>// C++ code
+        <pre><code>
+        int pot1 = 0, pot2 = 0, res = 0;
+        void setup()
+        {
+        pinMode(12, OUTPUT);
+        pinMode(A0, INPUT);
+        Serial.begin(9600);
+        pinMode(A1, INPUT);
+        pot1 = 0, pot2 = 0, res = 0;
+        digitalWrite(12, LOW);
+        }
+        void loop()
+        {
+        pot1 += analogRead(A0);
+        Serial.println("pot1---------------------");
+        Serial.println(pot1);
+        pot2 += analogRead(A1);
+        Serial.println("pot2---------------------");
+        Serial.println(pot2);
+        if (pot1 > pot2) {
+        res += (pot1 + pot2);
+        Serial.println("res---------------------");
+        Serial.println(res);
+        digitalWrite(12, HIGH);
+        } else {
+        digitalWrite(12, LOW);
+        }
+        delay(1); // Wait for 1 millisecond(s)
+        }
+    </code></pre>
+        </p>
+    </div>
+
+
+</body>
+
+</html>
